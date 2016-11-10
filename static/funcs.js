@@ -14,3 +14,4 @@
 	function runcaru(){$('#carousel-example-generic').carousel({interval: 200});};
 	
 	function first(){$('#carousel-example-generic').carousel(0);};
+

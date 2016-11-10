@@ -16,11 +16,9 @@
 	</div>
 	<br>
 	<br>
-	<center>
-	<input onclick="viswin()" class="btn btn-primary" type='button' value='Победить'></input>
+	<input onclick="viswin()" class="btn btn-primary" type='button' value='Победить'>
 	<br>
-	<input style="margin:0px 0px 20px 0px" onclick="visboot(); first(); runcaru()" class="btn btn-primary" type='button' value='Посмотреть карусель'></input>
-	</center>
+	<input style="margin:0px 0px 20px 0px" onclick="visboot(); first(); runcaru()" class="btn btn-primary" type='button' value='Посмотреть мемы'>
 	<div class="hidden-md hidden-lg">
 	<img src='/static/me.JPG' alt='Завтрак' width='400'>
 	</div>
@@ -36,7 +34,7 @@
 	<center>
 	<div class="container">
 	<h1>Вы победили!</h1>
-	<input onclick="visind()" class="btn btn-primary" type='button' value='Начать заново'></input>
+	<input onclick="visind()" class="btn btn-primary" type='button' value='Начать заново'>
 	</div>
 	</center>
 	</div>
@@ -49,7 +47,7 @@
 	<div class="row">
 	<div class="col-md-3"></div>
 	<div class="col-md-6">
-   <h1 aline='center'>Карусель</h1>
+   <h1 aline='center'>Мемы</h1>
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -61,17 +59,17 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="static/barakholka.JPG" alt="Барахолка">
+      <img src="https://pp.vk.me/c636418/v636418862/3b61c/NSVmHfuQ0t0.jpg" alt="Барахолка" width="600">
       <div class="carousel-caption">
       </div>
     </div>
     <div class="item">
-      <img src="static/english.JPG" alt="Английский">
+      <img src="https://pp.vk.me/c636418/v636418862/3b623/W2F7zNi3X1U.jpg" alt="Английский" width="600">
       <div class="carousel-caption">
       </div>
     </div>
     <div class="item">
-      <img src="static/111.JPG" alt="Ответы">
+      <img src="https://pp.vk.me/c636418/v636418862/3b62d/SEWCss7x36U.jpg" alt="Ответы" width="600">
       <div class="carousel-caption">
       </div>
     </div>
@@ -105,8 +103,10 @@
 	    $('#success').css("display","none");
       $('#bootstrap').css("display","none");
       $('#carousel-example-generic').carousel({interval: 20000000});
-      //$('#carousel-example-generic').carousel('pause');
-	  });	
+	  $('.carousel-inner').find('img').click(function() {
+          $('#carousel-example-generic').carousel('next');
+      })
+	  });
 	</script>
 	
 	</body>
